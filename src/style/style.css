@@ -1,0 +1,75 @@
+body {
+    margin: 0;  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    /* background:linear-gradient(rgba(241, 153, 153, 0.584) rgba(169, 225, 90, 0.592) rgba(255, 255, 255, 0.563) rgba(105, 244, 193, 0.633)); */
+
+}
+/* #gradient{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(241, 153, 153, 0.584) rgba(169, 225, 90, 0.592) rgba(255, 255, 255, 0.563) rgba(105, 244, 193, 0.633));
+} */
+
+
+/* //////// Animation of ball of teller//////// */
+
+
+#ball_teller{
+    margin-top: 500px;
+
+}
+#sparkle1, #sparkle5, #sparkle2, #sparkle4{
+    animation: sparkle_down 4s ease-in infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes sparkle_down{
+from{
+    transform:rotateY(0deg)
+}
+to {
+    transform:rotateY(360deg)
+}
+}
+#sparkle3{
+    animation: sparkle_different 4s ease-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes sparkle_different{
+    from{
+        transform:rotateY(0deg)
+    }
+    to {
+        transform:rotateY(180deg)
+}
+}
+
+#ball{
+    animation: ball 2s ease-in-out infinite  alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes ball {
+    from {
+transform:rotateX(0deg);
+    }
+    to {
+        transform: rotateX(15deg);
+
+    }
+}
+
+h3{
+    
+}
+
+
+    
